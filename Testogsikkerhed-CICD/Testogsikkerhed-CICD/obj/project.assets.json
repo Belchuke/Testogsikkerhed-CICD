@@ -280,23 +280,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\JJDF\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Jacob\\.nuget\\packages\\": {},
+    "E:\\Visual Studio Tools\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ting\\code\\asp.net\\core\\Testogsikkerhed-CICD\\Testogsikkerhed-CICD\\Testogsikkerhed-CICD\\Testogsikkerhed-CICD.csproj",
+      "projectUniqueName": "C:\\Users\\Jacob\\Documents\\GitHub\\Testogsikkerhed-CICD\\Testogsikkerhed-CICD\\Testogsikkerhed-CICD\\Testogsikkerhed-CICD.csproj",
       "projectName": "Testogsikkerhed-CICD",
-      "projectPath": "D:\\ting\\code\\asp.net\\core\\Testogsikkerhed-CICD\\Testogsikkerhed-CICD\\Testogsikkerhed-CICD\\Testogsikkerhed-CICD.csproj",
-      "packagesPath": "C:\\Users\\JJDF\\.nuget\\packages\\",
-      "outputPath": "D:\\ting\\code\\asp.net\\core\\Testogsikkerhed-CICD\\Testogsikkerhed-CICD\\Testogsikkerhed-CICD\\obj\\",
+      "projectPath": "C:\\Users\\Jacob\\Documents\\GitHub\\Testogsikkerhed-CICD\\Testogsikkerhed-CICD\\Testogsikkerhed-CICD\\Testogsikkerhed-CICD.csproj",
+      "packagesPath": "C:\\Users\\Jacob\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Jacob\\Documents\\GitHub\\Testogsikkerhed-CICD\\Testogsikkerhed-CICD\\Testogsikkerhed-CICD\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "E:\\Visual Studio Tools\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\JJDF\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Jacob\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -349,7 +350,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
