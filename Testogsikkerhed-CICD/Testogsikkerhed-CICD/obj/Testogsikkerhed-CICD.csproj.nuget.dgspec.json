@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ting\\code\\asp.net\\core\\Testogsikkerhed-CICD\\Testogsikkerhed-CICD\\Testogsikkerhed-CICD\\Testogsikkerhed-CICD.csproj": {}
+    "C:\\Users\\Jacob\\Documents\\GitHub\\Testogsikkerhed-CICD\\Testogsikkerhed-CICD\\Testogsikkerhed-CICD\\Testogsikkerhed-CICD.csproj": {}
   },
   "projects": {
-    "D:\\ting\\code\\asp.net\\core\\Testogsikkerhed-CICD\\Testogsikkerhed-CICD\\Testogsikkerhed-CICD\\Testogsikkerhed-CICD.csproj": {
+    "C:\\Users\\Jacob\\Documents\\GitHub\\Testogsikkerhed-CICD\\Testogsikkerhed-CICD\\Testogsikkerhed-CICD\\Testogsikkerhed-CICD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ting\\code\\asp.net\\core\\Testogsikkerhed-CICD\\Testogsikkerhed-CICD\\Testogsikkerhed-CICD\\Testogsikkerhed-CICD.csproj",
+        "projectUniqueName": "C:\\Users\\Jacob\\Documents\\GitHub\\Testogsikkerhed-CICD\\Testogsikkerhed-CICD\\Testogsikkerhed-CICD\\Testogsikkerhed-CICD.csproj",
         "projectName": "Testogsikkerhed-CICD",
-        "projectPath": "D:\\ting\\code\\asp.net\\core\\Testogsikkerhed-CICD\\Testogsikkerhed-CICD\\Testogsikkerhed-CICD\\Testogsikkerhed-CICD.csproj",
-        "packagesPath": "C:\\Users\\JJDF\\.nuget\\packages\\",
-        "outputPath": "D:\\ting\\code\\asp.net\\core\\Testogsikkerhed-CICD\\Testogsikkerhed-CICD\\Testogsikkerhed-CICD\\obj\\",
+        "projectPath": "C:\\Users\\Jacob\\Documents\\GitHub\\Testogsikkerhed-CICD\\Testogsikkerhed-CICD\\Testogsikkerhed-CICD\\Testogsikkerhed-CICD.csproj",
+        "packagesPath": "C:\\Users\\Jacob\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jacob\\Documents\\GitHub\\Testogsikkerhed-CICD\\Testogsikkerhed-CICD\\Testogsikkerhed-CICD\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "E:\\Visual Studio Tools\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\JJDF\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jacob\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -43,6 +44,26 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.10.13, )"
@@ -70,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
