@@ -8,9 +8,10 @@ namespace Testogsikkerhed_CICD.Services
 {
     public interface IUserService
     {
+        public Task<IEnumerable<User>> GetAll();
+        public Task<User> GetOne(int id);
         public Task<User> Authenticate(string username, string password);
         public Task Create(User user, string password);
-        public Task<User> GetOne(int id);
         public Task Update(User user, string password);
         public Task Delete(int id);
     }

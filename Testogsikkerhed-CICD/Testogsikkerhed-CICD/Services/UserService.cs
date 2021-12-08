@@ -17,6 +17,9 @@ namespace Testogsikkerhed_CICD.Services
             _context = context;
         }
 
+        public async Task<IEnumerable<User>> GetAll()
+            => await _context.Users.AsNoTracking().ToListAsync();
+
         public async Task<User> GetOne(int id)
             => await _context.Users.AsNoTracking().FirstOrDefaultAsync(u => u.Id == id) ?? throw new NotFoundException();
 

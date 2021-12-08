@@ -35,6 +35,27 @@ namespace Testogsikkerhed_CICD.Controller
         }
 
         [AllowAnonymous]
+        [HttpGet]
+        public async Task<IEnumerable<UserDto>> GetUsers()
+        {
+            var users = await _userService.GetAll();
+            UserDto[] userDtos = new UserDto[users.Count()];
+            int i = 0;
+            foreach (var user in users)
+            {
+                userDtos[i] = new UserDto()
+                {
+                    Id = user.Id,
+                    Name = user.Name,
+                    Age = user.Age,
+                    Email = user.Email
+                };
+                i++;
+            }
+            return userDtos;
+        }
+
+        [AllowAnonymous]
         [HttpGet("{id}")]
         public async Task<ActionResult<UserDto>> GetUser(int id)
         {
