@@ -107,8 +107,9 @@ namespace Testogsikkerhed_CICD
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IUserService service)
         {
+            
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -128,6 +129,8 @@ namespace Testogsikkerhed_CICD
             {
                 endpoints.MapControllers();
             });
+
+            DefaultData.CreateDefaultData(service).Wait();
         }
     }
 }

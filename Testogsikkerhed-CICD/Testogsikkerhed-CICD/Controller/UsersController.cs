@@ -32,6 +32,7 @@ namespace Testogsikkerhed_CICD.Controller
         {
             _userService = userService;
             _appSettings = appSettings.Value;
+            //DefaultData defaultData = new DefaultData(userService);
         }
 
         [AllowAnonymous]
