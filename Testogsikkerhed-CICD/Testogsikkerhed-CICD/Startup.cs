@@ -36,7 +36,7 @@ namespace Testogsikkerhed_CICD
             services.AddDbContext<Context>(options => options.UseSqlServer(Configuration.GetConnectionString("default")));
             services.AddCors(option =>
             {
-                option.AddDefaultPolicy(
+                option.AddPolicy("Policy",
                 builder =>
                 {
                     builder.AllowAnyOrigin();
@@ -119,6 +119,8 @@ namespace Testogsikkerhed_CICD
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors("Policy");
 
             app.UseAuthorization();
 

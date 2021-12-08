@@ -81,7 +81,6 @@ namespace Testogsikkerhed_CICD.Controller
             }
         }
 
-        [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> PostUser(UserRegisterDto userDto)
         {
@@ -144,8 +143,6 @@ namespace Testogsikkerhed_CICD.Controller
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUser(int id)
         {
-            if (id != Convert.ToInt32(User.Identity.Name))
-                return Unauthorized();
 
             try
             {
