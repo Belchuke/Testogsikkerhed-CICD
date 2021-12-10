@@ -73,11 +73,6 @@ namespace Testogsikkerhed_CICD.Services
             await _context.SaveChangesAsync();
         }
 
-        public Task Update(User user, string password)
-        {
-            throw new NotImplementedException();
-        }
-
         public async Task Delete(int id)
         {
             User user = await _context.Users.FindAsync(id);

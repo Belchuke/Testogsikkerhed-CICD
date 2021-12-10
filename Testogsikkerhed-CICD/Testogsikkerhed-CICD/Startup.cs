@@ -85,17 +85,13 @@ namespace Testogsikkerhed_CICD
                         return Task.CompletedTask;
                     }
                 };
-                //TODO: found out if there is any alternative parameters that would increase security.
-                //x.RequireHttpsMetadata = false;
                 options.SaveToken = true;
                 options.TokenValidationParameters = new TokenValidationParameters
                 {
                     ValidateIssuerSigningKey = true,
                     IssuerSigningKey = new SymmetricSecurityKey(key),
                     ValidateAudience = false,
-                    //TODO: validate different issuers dependant on being in dev or prod environment.
-                    ValidateIssuer = false, //TODO: this should be true when the todo above is fixed.
-                    //ValidIssuer = "https://localhost:44391/"
+                    ValidateIssuer = false,
                     ValidateLifetime = true,
                 };
             });

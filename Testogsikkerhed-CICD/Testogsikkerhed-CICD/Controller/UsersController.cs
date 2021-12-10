@@ -144,7 +144,6 @@ namespace Testogsikkerhed_CICD.Controller
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteUser(int id)
         {
-
             try
             {
                 await _userService.Delete(id);
